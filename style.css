@@ -13,7 +13,7 @@ nav {
   display: flex;
   justify-content: center;
   background-color: #e0e0e0;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 7.5rem;
@@ -50,10 +50,51 @@ nav ul li a img {
   margin-right: 1rem;
 }
 
-.width {
-  height: 10000px;
+div#content-container {
+  width: 60%;
+  margin: 15rem auto 15rem auto;
 }
 
+div#content-container h1,
+div#content-container p,
+div#content-container h2,
+div#content-container ul {
+  margin: 10rem 0;
+  padding: 0;
+}
+
+div#content-container ol,
+div#content-container li {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+div#content-container h1 {
+  font-size: 5.9rem;
+  font-weight: 400;
+}
+
+div#content-container img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+div#content-container p,
+div#content-container li {
+  font-size: 3.2rem;
+}
+
+div#content-container ul {
+  list-style-type: square;
+}
+
+div#content-container h2 {
+  font-size: 4.6rem;
+  font-weight: 400;
+}
+
+/* ==================== */
 /* Desktop - 1600px */
 @media only screen and (max-width: 1600px) {
   :root {
@@ -101,6 +142,31 @@ nav ul li a img {
     margin-right: 0;
     width: 5rem;
   }
+
+  div#content-container {
+    width: 90%;
+    margin: 5rem auto 15rem auto;
+  }
+
+  div#content-container h1,
+  div#content-container p,
+  div#content-container h2,
+  div#content-container ul {
+    margin: 5rem 0;
+  }
+
+  div#content-container h1 {
+    font-size: 4.6rem;
+    margin-top: 0;
+  }
+
+  div#content-container p,
+  div#content-container li {
+    font-size: 2.6rem;
+  }
+  div#content-container h2 {
+    font-size: 3.7rem;
+  }
 }
 
 /* Phone - 500px */
@@ -119,5 +185,29 @@ nav ul li a img {
 
   nav ul li a img {
     width: 3rem;
+  }
+
+  div#content-container {
+    margin: 5rem auto 15rem auto;
+  }
+
+  div#content-container h1,
+  div#content-container p,
+  div#content-container h2,
+  div#content-container ul {
+    margin: 5rem 0;
+  }
+
+  div#content-container h1 {
+    font-size: 3.7rem;
+    margin-top: 0;
+  }
+
+  div#content-container p,
+  div#content-container li {
+    font-size: 2rem;
+  }
+  div#content-container h2 {
+    font-size: 2.9rem;
   }
 }
